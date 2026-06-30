@@ -1,41 +1,43 @@
 # Expense Tracker
 
-A simple Expense Tracker application built using **Python**, **Streamlit**, and **SQLite**. The application allows users to record, manage, and analyze their daily expenses through an interactive web interface.
+A web-based Expense Tracker built using **Python**, **Streamlit**, and **SQLite**. The application enables users to efficiently record, manage, and analyze their daily expenses through an intuitive interface while demonstrating CRUD (Create, Read, Update, Delete) operations using a relational database.
 
 ---
 
 ## Features
 
-- Add new expenses
-- View all recorded expenses
-- Update existing expenses
-- Delete expenses
-- View total expenditure
-- Category-wise expense summary
-- Persistent data storage using SQLite
+* Add new expenses
+* View all recorded expenses
+* Update existing expenses
+* Delete expenses
+* View total expenditure
+* View category-wise expense summary
+* Persistent data storage using SQLite
+* Simple and interactive Streamlit interface
 
 ---
 
 ## Technologies Used
 
-- Python
-- Streamlit
-- SQLite3
+* Python 3
+* Streamlit
+* SQLite3
 
 ---
 
 ## Project Structure
 
-```
-expense_tracker/
+```text
+Expense-Tracker/
 │
-├── app.py                 # Streamlit user interface
-├── database.py            # Database operations
-├── expenses.db            # SQLite database (generated automatically)
-├── requirements.txt
+├── app.py              # Streamlit application
+├── database.py         # SQLite database operations
+├── requirements.txt    # Project dependencies
 ├── README.md
 └── .gitignore
 ```
+
+> **Note:** `expenses.db` is created automatically when the application is run for the first time.
 
 ---
 
@@ -59,7 +61,7 @@ cd Expense-Tracker
 python -m venv .venv
 ```
 
-Activate it
+### Activate the virtual environment
 
 **Windows**
 
@@ -83,26 +85,35 @@ streamlit run app.py
 
 ## Database
 
-The application uses **SQLite** for persistent storage.
+The application uses **SQLite** for persistent data storage.
 
-If the database does not exist, it is automatically created when the application starts.
+The database is automatically created on the first run and currently stores:
 
-The database stores:
+* Expense ID
+* Category
+* Amount
 
-- Expense ID
-- Category
-- Amount
+---
+
+## Skills Demonstrated
+
+* Python Programming
+* CRUD Operations
+* SQLite Database Integration
+* Streamlit Application Development
+* Modular Project Structure
+* Git & GitHub
 
 ---
 
 ## Future Improvements
 
-- Expense analytics dashboard
-- Charts and visualizations
-- Monthly expense reports
-- Export to CSV/PDF
-- Budget tracking
-- User authentication
+* Interactive charts and visualizations
+* Monthly expense reports
+* Budget planning
+* Export expenses to CSV/PDF
+* User authentication
+* Expense filtering and search
 
 ---
 
